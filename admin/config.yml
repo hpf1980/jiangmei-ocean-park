@@ -4,6 +4,8 @@ backend:
   name: github
   repo: hpf1980/jiangmei-ocean-park
   branch: main
+  app_id: Ov23liSUvDpnwjuQAu4f
+  app_client_secret: 9d8a740a2a0d6513afcbea17a85fd23297267bb3
 
 media_folder: "assets/img"
 public_folder: "/assets/img"
