@@ -1,0 +1,200 @@
+# Decap CMS 配置 — 江和美海洋公园官网
+# 数据文件位于 data/*.json，保存后自动提交到 GitHub 并触发 Pages 重新部署。
+backend:
+  name: github
+  repo: hpf1980/jiangmei-ocean-park
+  branch: main
+
+media_folder: "assets/img"
+public_folder: "/assets/img"
+
+locale: zh
+site_url: https://hpf1980.github.io/jiangmei-ocean-park/
+display_url: https://hpf1980.github.io/jiangmei-ocean-park/
+editor:
+  preview: true
+
+collections:
+  # ---------- 站点全局（单文档 data/site.json） ----------
+  - name: site
+    label: "站点设置"
+    label_singular: "站点设置"
+    folder: data
+    create: false
+    editor:
+      preview: false
+    fields:
+      - { label: "首屏小标签", name: hero.eyebrow, type: string }
+      - { label: "首屏大标题（整句）", name: hero.title, type: string, hint: "例如：把一整片海，搬进你的城市" }
+      - { label: "高亮词", name: hero.highlight, type: string, hint: "标题中要标青绿色的词，例如：海" }
+      - { label: "首屏副标题", name: hero.subtitle, type: text }
+      - { label: "首屏营业时间", name: hero.hours, type: string }
+      - { label: "首屏地址", name: hero.address, type: string }
+      - { label: "首屏开放说明", name: hero.open, type: string }
+      - { label: "首屏背景图（路径）", name: hero.image, type: string, hint: "assets/img/xxx.jpg" }
+      - { label: "公告条文字", name: notice.text, type: text }
+      - { label: "公告条链接", name: notice.link, type: string, hint: "news.html" }
+      - { label: "联系-地址", name: contact.address, type: string }
+      - { label: "联系-电话", name: contact.phone, type: string }
+      - { label: "联系-电话时段", name: contact.phone_hours, type: string }
+      - { label: "联系-邮箱", name: contact.email, type: string }
+      - label: "开放时间"
+        name: hours
+        type: list
+        fields:
+          - { label: "唯一标识（勿改）", name: key, type: string, widget: hidden }
+          - { label: "日期", name: day, type: string }
+          - { label: "时间", name: time, type: string }
+      - label: "公共交通"
+        name: transport
+        type: list
+        fields:
+          - { label: "唯一标识（勿改）", name: key, type: string, widget: hidden }
+          - { label: "方式", name: label, type: string }
+          - { label: "说明", name: text, type: text }
+      - label: "自驾与停车"
+        name: parking
+        type: list
+        fields:
+          - { label: "唯一标识（勿改）", name: key, type: string, widget: hidden }
+          - { label: "项目", name: label, type: string }
+          - { label: "说明", name: text, type: text }
+      - label: "服务设施"
+        name: facilities
+        type: list
+        fields:
+          - { label: "唯一标识（勿改）", name: key, type: string, widget: hidden }
+          - { label: "设施", name: text, type: string }
+      - { label: "关于-标题", name: about.title, type: string }
+      - { label: "关于-配图（路径）", name: about.image, type: string }
+      - label: "关于-段落"
+        name: about.paragraphs
+        type: list
+        fields:
+          - { label: "唯一标识（勿改）", name: key, type: string, widget: hidden }
+          - { label: "段落", name: text, type: text }
+      - label: "园区数据"
+        name: stats
+        type: list
+        fields:
+          - { label: "唯一标识（勿改）", name: key, type: string, widget: hidden }
+          - { label: "数值", name: value, type: string }
+          - { label: "说明", name: label, type: string }
+
+  # ---------- 展区 ----------
+  - name: zones
+    label: "主题展区"
+    label_singular: "展区"
+    folder: data
+    create: false
+    editor:
+      preview: false
+    fields:
+      - { label: "锚点（英文，勿改）", name: anchor, type: string }
+      - { label: "展区名", name: name, type: string }
+      - { label: "英文名", name: en, type: string }
+      - { label: "一句话卖点", name: count, type: string }
+      - { label: "配图（路径）", name: image, type: string }
+      - { label: "显示在首页", name: show_on_home, type: boolean, default: false }
+
+  # ---------- 动物 ----------
+  - name: animals
+    label: "动物"
+    label_singular: "动物"
+    folder: data
+    create: false
+    editor:
+      preview: false
+    fields:
+      - { label: "所属展区（锚点）", name: zone, type: string, hint: "coral / shallow / polar / deepsea / dolphin / touch" }
+      - { label: "动物名", name: name, type: string }
+      - { label: "学名/英文名", name: en, type: string }
+      - { label: "介绍", name: desc, type: text }
+      - { label: "配图（路径）", name: image, type: string }
+      - { label: "明星动物", name: star, type: boolean, default: false }
+
+  # ---------- 门票 ----------
+  - name: tickets
+    label: "门票"
+    label_singular: "门票"
+    folder: data
+    create: false
+    editor:
+      preview: false
+    fields:
+      - label: "价格表"
+        name: price_rows
+        type: list
+        fields:
+          - { label: "唯一标识（勿改）", name: key, type: string, widget: hidden }
+          - { label: "票种", name: type, type: string }
+          - { label: "适用对象", name: who, type: string }
+          - { label: "门市价", name: list, type: string }
+          - { label: "OTA 价", name: ota, type: string }
+          - { label: "省多少", name: save, type: string }
+      - label: "首页门票卡（3 张）"
+        name: home_cards
+        type: list
+        fields:
+          - { label: "唯一标识（勿改）", name: key, type: string, widget: hidden }
+          - { label: "票种", name: type, type: string }
+          - { label: "价格（数字）", name: price, type: string }
+          - { label: "说明", name: desc, type: text }
+          - { label: "主推（最热门）", name: featured, type: boolean, default: false }
+      - label: "OTA 渠道"
+        name: ota
+        type: list
+        fields:
+          - { label: "唯一标识（勿改）", name: key, type: string, widget: hidden }
+          - { label: "平台名", name: name, type: string }
+          - { label: "提示语", name: hint, type: string }
+      - label: "购票须知"
+        name: notice
+        type: list
+        fields:
+          - { label: "唯一标识（勿改）", name: key, type: string, widget: hidden }
+          - { label: "条目", name: text, type: text }
+
+  # ---------- 每日演出 ----------
+  - name: shows
+    label: "每日演出"
+    label_singular: "演出"
+    folder: data
+    create: false
+    editor:
+      preview: false
+    fields:
+      - { label: "时间", name: time, type: string }
+      - { label: "演出名", name: name, type: string }
+      - { label: "地点", name: zone, type: string }
+
+  # ---------- 活动公告（单文档 data/news.json，列表内增删） ----------
+  - name: news
+    label: "活动公告"
+    label_singular: "活动公告"
+    folder: data
+    create: false
+    editor:
+      preview: false
+    fields:
+      - label: "活动列表"
+        name: items
+        type: list
+        fields:
+          - { label: "唯一标识（勿改）", name: key, type: string, widget: hidden }
+          - { label: "日期", name: date, type: string, hint: "格式 2026-10-10" }
+          - { label: "分类标签", name: tag, type: string }
+          - { label: "标题", name: title, type: string }
+          - { label: "摘要", name: summary, type: text }
+
+  # ---------- FAQ ----------
+  - name: faq
+    label: "常见问题"
+    label_singular: "问题"
+    folder: data
+    create: false
+    editor:
+      preview: false
+    fields:
+      - { label: "问题", name: q, type: string }
+      - { label: "答案", name: a, type: text }

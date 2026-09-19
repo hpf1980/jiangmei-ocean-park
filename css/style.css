@@ -1697,3 +1697,11 @@ p {
     flex-direction: column;
   }
 }
+
+/* 页脚“编辑内容”入口 */
+.admin-link{
+  display:inline-block;margin-top:16px;font-size:.8rem;font-weight:600;
+  color:var(--aqua-300,#7fe3d8);text-decoration:none;letter-spacing:.04em;
+  border-bottom:1px dashed currentColor;padding-bottom:2px;transition:color .2s,border-color .2s;
+}
+.admin-link:hover{color:#fff;border-bottom-style:solid;}

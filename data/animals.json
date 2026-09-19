@@ -1,0 +1,146 @@
+[
+  {
+    "zone": "coral",
+    "name": "小丑鱼",
+    "en": "Amphiprion ocellaris",
+    "desc": "海葵中的“小邻居”，橙白条纹在蓝色水体里格外醒目。占位介绍：小丑鱼与海葵互利共生，皮肤分泌的黏液让它免受海葵刺细胞伤害。",
+    "image": "assets/img/animal-clownfish.jpg",
+    "star": false
+  },
+  {
+    "zone": "coral",
+    "name": "鹦嘴鱼",
+    "en": "Scarus",
+    "desc": "珊瑚礁的“园丁”，用喙状齿啃食珊瑚上的藻类，每天可产出细沙。占位介绍：一条鹦嘴鱼一生能制造数吨白沙。",
+    "image": "assets/img/animal-parrotfish.jpg",
+    "star": false
+  },
+  {
+    "zone": "coral",
+    "name": "热带鱼群",
+    "en": "Reef Fishes",
+    "desc": "占位介绍：200 余种热带鱼按生态位混养，模拟真实珊瑚礁群落。每天 14:30 美人鱼水下秀在此展区进行。",
+    "image": "assets/img/animal-fish-group.jpg",
+    "star": false
+  },
+  {
+    "zone": "shallow",
+    "name": "绿海龟",
+    "en": "Chelonia mydas",
+    "desc": "占位介绍：国家一级保护动物，现存最古老的爬行动物之一。园区设有海龟繁育与放归计划（示例）。",
+    "image": "assets/img/animal-turtle.jpg",
+    "star": false
+  },
+  {
+    "zone": "shallow",
+    "name": "鳐鱼",
+    "en": "Rays",
+    "desc": "占位介绍：扁平的“水中风筝”，翼展可达 2 米。每天 11:30 有鳐鱼喂食展示（示例）。",
+    "image": "assets/img/animal-ray.jpg",
+    "star": false
+  },
+  {
+    "zone": "shallow",
+    "name": "水母",
+    "en": "Jellyfish",
+    "desc": "占位介绍：99% 的身体是水，却已优雅漂浮了 5 亿年。水母宫在夜间有灯光秀（示例）。",
+    "image": "assets/img/animal-jellyfish.jpg",
+    "star": false
+  },
+  {
+    "zone": "polar",
+    "name": "企鹅",
+    "en": "Penguins",
+    "desc": "占位介绍：南极来的“绅士”，不会飞却是最优秀的游泳健将。每日 15:00 企鹅散步展示（示例）。",
+    "image": "assets/img/animal-penguin.jpg",
+    "star": false
+  },
+  {
+    "zone": "polar",
+    "name": "海豹",
+    "en": "Seals",
+    "desc": "占位介绍：水下“杂技演员”，能连续憋气 20 分钟。每日 12:00 海狮智能表演（示例）。",
+    "image": "assets/img/animal-seal.jpg",
+    "star": false
+  },
+  {
+    "zone": "polar",
+    "name": "白鲸",
+    "en": "Beluga Whale",
+    "desc": "占位介绍：海洋中的“金丝雀”，能用 500 多种声音交流。每日 16:00 白鲸水下芭蕾（示例）。",
+    "image": "assets/img/animal-white-whale.jpg",
+    "star": false
+  },
+  {
+    "zone": "deepsea",
+    "name": "鲨鱼",
+    "en": "Sharks",
+    "desc": "占位介绍：海洋的“活化石”，比恐龙还古老。100 米海底隧道正上方，它们从你头顶游过。",
+    "image": "assets/img/animal-shark.jpg",
+    "star": false
+  },
+  {
+    "zone": "deepsea",
+    "name": "章鱼",
+    "en": "Octopus",
+    "desc": "占位介绍：智商最高的无脊椎动物，会开门、会伪装、有三颗心脏。每日 13:30 章鱼喂食展示（示例）。",
+    "image": "assets/img/animal-octopus.jpg",
+    "star": false
+  },
+  {
+    "zone": "deepsea",
+    "name": "深海鱼",
+    "en": "Deep Sea Fishes",
+    "desc": "占位介绍：来自 1000 米以下的“发光居民”，自带生物荧光。深海展区灯光调至最暗，模拟真实深海环境。",
+    "image": "assets/img/animal-fish-tank.jpg",
+    "star": false
+  },
+  {
+    "zone": "dolphin",
+    "name": "海豚",
+    "en": "Bottlenose Dolphin",
+    "desc": "占位介绍：园区“明星”，智商相当于 7 岁儿童。每日 10:30 / 14:00 海豚欢乐剧场，可近距离观赏。",
+    "image": "assets/img/animal-dolphin.jpg",
+    "star": true
+  },
+  {
+    "zone": "dolphin",
+    "name": "海马",
+    "en": "Seahorse",
+    "desc": "占位介绍：唯一“爸爸生宝宝”的鱼类，雄海马用育儿袋孵化卵。触摸池旁有海马科普角（示例）。",
+    "image": "assets/img/animal-seahorse.jpg",
+    "star": false
+  },
+  {
+    "zone": "dolphin",
+    "name": "美西螈",
+    "en": "Axolotl",
+    "desc": "占位介绍：永远长不大的“微笑天使”，断肢可再生。触摸池常驻居民，可近距离观察（示例）。",
+    "image": "assets/img/animal-axolotl.jpg",
+    "star": false
+  },
+  {
+    "zone": "touch",
+    "name": "海星",
+    "en": "Starfish",
+    "desc": "占位介绍：没有大脑却会思考，断臂可再生。触摸池明星，适合亲子互动。",
+    "image": "assets/img/animal-starfish.jpg",
+    "star": false
+  },
+  {
+    "zone": "touch",
+    "name": "海胆",
+    "en": "Sea Urchin",
+    "desc": "占位介绍：布满尖刺的“小刺球”，其实是温和的食草动物。工作人员会指导安全触摸方式。",
+    "image": "assets/img/animal-urchin.jpg",
+    "star": false
+  },
+  {
+    "zone": "touch",
+    "name": "螃蟹",
+    "en": "Crabs",
+    "desc": "占位介绍：横着走的“小武士”，会换壳长大。触摸池每日 15:30 有螃蟹科普小课堂（示例）。",
+    "image": "assets/img/animal-crab.jpg",
+    "star": false
+  }
+]

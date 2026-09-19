@@ -52,6 +52,7 @@ def build():
 </main>
 {footer}
 <script src="js/main.js" defer></script>
+<script src="js/render.js" defer></script>
 </body>
 </html>
 """

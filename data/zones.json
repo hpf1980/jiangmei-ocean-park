@@ -1,0 +1,50 @@
+[
+  {
+    "anchor": "coral",
+    "name": "珊瑚秘境",
+    "en": "Coral Reef",
+    "count": "80+ 珊瑚 · 200+ 热带鱼",
+    "image": "assets/img/zone-coral.jpg",
+    "show_on_home": true
+  },
+  {
+    "anchor": "shallow",
+    "name": "热带浅海",
+    "en": "Tropical Shallow Sea",
+    "count": "12 米弧形主展缸",
+    "image": "assets/img/zone-shallow.jpg",
+    "show_on_home": true
+  },
+  {
+    "anchor": "polar",
+    "name": "极地冰川",
+    "en": "Polar Ice",
+    "count": "企鹅 · 海豹 · 白鲸",
+    "image": "assets/img/zone-polar.jpg",
+    "show_on_home": true
+  },
+  {
+    "anchor": "deepsea",
+    "name": "深海奇境",
+    "en": "Deep Sea",
+    "count": "100 米海底隧道",
+    "image": "assets/img/zone-deepsea.jpg",
+    "show_on_home": true
+  },
+  {
+    "anchor": "dolphin",
+    "name": "鲸豚剧场",
+    "en": "Dolphin Theater",
+    "count": "海豚 · 海马 · 美西螈",
+    "image": "assets/img/animal-dolphin.jpg",
+    "show_on_home": false
+  },
+  {
+    "anchor": "touch",
+    "name": "触摸池",
+    "en": "Touch Pool",
+    "count": "海星 · 海胆 · 螃蟹",
+    "image": "assets/img/animal-starfish.jpg",
+    "show_on_home": false
+  }
+]

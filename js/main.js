@@ -102,13 +102,4 @@
   var y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
 
-  /* ---------- 截图模式（?shot=1 时固定 hero 高度，便于全页截图） ---------- */
-  if (/[?&]shot=1/.test(location.search)) {
-    var hero = document.querySelector(".hero");
-    if (hero) {
-      hero.style.minHeight = "760px";
-      hero.style.height = "760px";
-      hero.style.maxHeight = "760px";
-    }
-  }
 })();

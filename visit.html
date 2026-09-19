@@ -47,182 +47,21 @@
   <div class="container">
     <p class="eyebrow">游玩攻略</p>
     <h1>开放时间 · 交通 · 设施</h1>
-    <p>占位内容：地址、电话、交通方式为示例数据，上线前请替换为真实信息。</p>
+    <p>开放时间、交通方式、服务设施与常见问题。</p>
   </div>
 </section>
 
-<!-- 开放时间 -->
-<section class="section" id="hours">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">开放时间</span>
-      <h2>全年无休</h2>
-    </div>
-    <div class="info-grid">
-      <div class="info-card reveal">
-        <h3>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
-          每日开闭馆时间
-        </h3>
-        <table class="hours-table">
-          <tr><td>周一至周五</td><td>9:00 – 17:30</td></tr>
-          <tr><td>周六 / 周日</td><td>9:00 – 18:00</td></tr>
-          <tr><td>法定节假日</td><td>9:00 – 18:00</td></tr>
-          <tr><td>停止入园</td><td>闭馆前 1 小时</td></tr>
-        </table>
-        <p class="hours-note">* 占位数据 · 以当日园区公告为准</p>
-      </div>
-      <div class="info-card reveal reveal-delay-1">
-        <h3>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-5.5-7-11a7 7 0 1 1 14 0c0 5.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
-          园区地址
-        </h3>
-        <div class="transport-item">
-          <span class="t-label">地址</span>
-          <span class="t-text">杭州市西湖区江和美路 88 号（占位）</span>
-        </div>
-        <div class="transport-item">
-          <span class="t-label">电话</span>
-          <span class="t-text">0571-8888 6666（9:00–17:00）</span>
-        </div>
-        <div class="transport-item">
-          <span class="t-label">邮箱</span>
-          <span class="t-text">service@jianghmeiocean.example</span>
-        </div>
-        <div class="map-placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M9 4 3 6v14l6-2 6 2 6-2V4l-6 2-6-2z"/><path d="M9 4v14M15 6v14"/></svg>
-          地图占位 · 上线时替换为高德 / 腾讯地图嵌入
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- 开放时间（render.js，data/site.json） -->
+<div id="mount-hours"></div>
 
-<!-- 交通指南 -->
-<section class="section" id="transport" style="padding-top:0">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">交通指南</span>
-      <h2>多种方式，轻松到达</h2>
-    </div>
-    <div class="info-grid">
-      <div class="info-card reveal">
-        <h3>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="3" width="16" height="14" rx="3"/><path d="M4 11h16M8 21l1-4M16 21l-1-4"/><circle cx="8.5" cy="14.5" r="1"/><circle cx="15.5" cy="14.5" r="1"/></svg>
-          公共交通
-        </h3>
-        <div class="transport-item">
-          <span class="t-label">地铁</span>
-          <span class="t-text">占位：3 号线「江和美站」C 口出，步行约 600 米</span>
-        </div>
-        <div class="transport-item">
-          <span class="t-label">公交</span>
-          <span class="t-text">占位：128 / 256 / 309 路「江和美公园站」下车即到</span>
-        </div>
-        <div class="transport-item">
-          <span class="t-label">打车</span>
-          <span class="t-text">占位：导航搜索"江和美海洋公园"，园区门口设落客区</span>
-        </div>
-      </div>
-      <div class="info-card reveal reveal-delay-1">
-        <h3>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 11V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4"/><path d="M3 11h18v6H3z"/><circle cx="7.5" cy="19" r="1.5"/><circle cx="16.5" cy="19" r="1.5"/></svg>
-          自驾与停车
-        </h3>
-        <div class="transport-item">
-          <span class="t-label">停车场</span>
-          <span class="t-text">占位：园区地下停车场 500 个车位</span>
-        </div>
-        <div class="transport-item">
-          <span class="t-label">收费</span>
-          <span class="t-text">占位：10 元 / 2 小时，封顶 30 元 / 天</span>
-        </div>
-        <div class="transport-item">
-          <span class="t-label">新能源</span>
-          <span class="t-text">占位：设 20 个充电桩（快充 10 / 慢充 10）</span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- 交通指南（render.js） -->
+<div id="mount-transport"></div>
 
-<!-- 服务设施 -->
-<section class="section" id="facility" style="padding-top:0">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">服务设施</span>
-      <h2>贴心服务，一应俱全</h2>
-    </div>
-    <div class="info-card reveal">
-      <ul class="facility-list">
-        <li>母婴室（2 处）</li>
-        <li>轮椅 / 婴儿车租借</li>
-        <li>失物招领处</li>
-        <li>医务室</li>
-        <li>餐厅（2 家）</li>
-        <li>纪念品商店</li>
-        <li>自动售货机</li>
-        <li>行李寄存</li>
-        <li>无障碍通道</li>
-        <li>免费 Wi-Fi</li>
-      </ul>
-    </div>
-  </div>
-</section>
+<!-- 服务设施（render.js） -->
+<div id="mount-facility"></div>
 
-<!-- FAQ -->
-<section class="section" id="faq" style="padding-top:0">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="eyebrow">常见问题</span>
-      <h2>你可能想问</h2>
-    </div>
-    <div class="faq-list">
-      <div class="faq-item reveal">
-        <button class="faq-q" aria-expanded="false">
-          门票可以在园区门口现场购买吗？
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">可以。园区入口设有人工售票窗口，但节假日高峰时段现场购票可能需排队，且现场价为门市价（比 OTA 贵 30–40 元）。建议提前在 OTA 平台购票。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" aria-expanded="false">
-          儿童身高怎么测量？
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">入园口设有标准身高测量尺，以实际测量为准。1.2 米以下（含）免费，1.2–1.5 米（含 1.2 米）购儿童票，1.5 米以上（含）购成人票。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" aria-expanded="false">
-          园区内可以自带食物吗？
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">可以携带密封包装的零食和饮用水，但禁止携带玻璃容器、自热食品、气味浓烈食物。园区内设有 2 家餐厅和多个休息区。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" aria-expanded="false">
-          门票可以退吗？
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">未入园的门票可在原购买平台申请全额退款；已入园后概不退款。具体退款规则以各 OTA 平台页面说明为准。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" aria-expanded="false">
-          可以带宠物吗？
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">不可以。为保障动物与游客安全，园区内禁止携带任何宠物（导盲犬等辅助犬除外）。</div></div>
-      </div>
-      <div class="faq-item reveal">
-        <button class="faq-q" aria-expanded="false">
-          演出需要额外购票吗？
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg>
-        </button>
-        <div class="faq-a"><div class="faq-a-inner">不需要。全园通票已包含所有常规演出（海豚剧场、海狮表演、美人鱼秀、白鲸芭蕾等）。部分特别活动（如夜场、主题展）可能需另行购票，以活动页公告为准。</div></div>
-      </div>
-    </div>
-  </div>
-</section>
+<!-- FAQ（render.js，data/faq.json） -->
+<div id="mount-faq"></div>
 </main>
 <footer class="site-footer">
   <div class="container">
@@ -242,6 +81,7 @@
           </span>
         </a>
         <p>杭州 · 一座把海洋搬进城市的小型海洋馆。看鲸豚起舞，与珊瑚同游，把一整片海的温柔带回家。</p>
+        <a class="admin-link" href="admin/" title="内容管理后台">✎ 编辑内容</a>
       </div>
       <div class="footer-col">
         <h4>快速导航</h4>
@@ -288,5 +128,6 @@
   </div>
 </footer>
 <script src="js/main.js" defer></script>
+<script src="js/render.js" defer></script>
 </body>
 </html>
